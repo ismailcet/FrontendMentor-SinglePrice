@@ -1,0 +1,270 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+/* font-family: 'Karla', sans-serif; */
+
+/* Global Variables */
+:root{
+    --clr-cyan:hsl(179, 62%, 43%);
+    --clr-yellow:hsl(71, 73%, 54%);
+    --clr-light-gray:hsl(204, 43%, 93%);
+    --clr-blue:hsl(218, 22%, 67%);  
+    --ff-primary:'Karla', sans-serif;
+    --radius:.5rem;
+}
+
+/* Global Styles */
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--clr-light-gray);
+    font-family: var(--ff-primary);
+    font-size: 16px;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+/* Main Style */
+.section{
+    margin: 4.5rem 2rem;
+}
+.section-center{
+    background-color: white;
+    border-radius: var(--radius);
+    padding: 1.75rem 1.5rem;
+    box-shadow: 0px 0px 14px 5px rgb(0 0 0 / 30%);
+}
+/* Up */
+.title{
+    font-size: 1.2rem;
+    color: var(--clr-cyan);
+    margin-bottom: 1.5rem;
+}
+.title-info{
+    color: var(--clr-yellow);
+    margin-bottom: 1.25rem;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.info{
+    font-size: .875rem;
+    color: var(--clr-blue);
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+/* Down */
+.month{
+    background-color: var(--clr-cyan);
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    padding: 1.75rem 1.5rem 2.5rem;
+}
+.month-title{
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+.price strong{
+    color: white;
+    font-size: 1.75rem;
+    margin-right: 10px;
+}
+.price{
+    display: flex;
+    align-items: center;
+    color: var(--clr-light-gray);
+    font-size: .8rem;
+    font-weight: 400;
+    margin-bottom:1rem;
+}
+.month-info{
+    color: white;
+    margin-bottom:2rem;
+}
+.btn{
+    padding: 1rem 6.25rem 0.75rem;
+    text-align: center;
+    background-color: var(--clr-yellow);
+    color: white;
+    border-radius: var(--radius);
+    font-size: 1rem;
+    font-weight: 700;
+}
+.whyUs{
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    margin-bottom: -1.75rem;
+    border-bottom-left-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+    background-color: #4ABEBD;
+    padding: 1.75rem 1.5rem;
+    color: white;
+}
+.whyUs-title{
+    font-size: 1.2rem;
+    margin-bottom: 1.25rem;
+}
+.link a{
+    color: var(--clr-light-gray);
+    font-size: .875rem;
+    font-weight: 400;
+}
+.link:not(:last-child){
+    margin-bottom: .3rem;
+}
+/* Responsive Design */
+
+/* Tablet */
+@media screen and (max-width:992px) and (min-width:600px) {
+    .section{
+        margin: 4.5rem 7rem;
+    }
+    .title{
+        font-size:1.5rem;
+    }
+    .title-info{
+        font-size:1.2rem;
+    }
+    .month-title{
+        font-size: 1.5rem;
+    }
+    .whyUs-title{
+        font-size:1.5rem;
+    }
+    .btn{
+        position: relative;
+        left: 12%;
+        padding: 1rem 8.25rem 0.75rem;
+    }
+}
+/* Low Screen Desktop */
+@media screen and (max-width:1280px) and (min-width:992px){
+    .section{
+        margin: 4.5rem 10rem;
+    }
+    .section-center{
+        padding: 0;
+    }
+    .up{
+        padding: 2rem;
+    }
+    .title{
+        font-size:1.5rem;
+    }
+    .title-info{
+        font-size:1.3rem;
+    }
+    .info{
+        font-size:1.2rem;
+        margin-bottom: 0;
+    }
+    .down{
+        display:flex;
+    }
+    .month{
+        width: 50%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 2rem;
+        border-bottom-left-radius: var(--radius);
+    }
+    .month-title{
+        font-size:1.2rem;
+    }
+    .price strong{
+        font-size:2.5rem;
+    }
+    .month-info{
+        font-size:1.2rem;
+    }
+    .btn{
+        padding: 1.25rem 7rem;
+    }
+    .whyUs{
+        width:50%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        border-bottom-left-radius: 0;
+        padding:2rem;
+    }
+    .whyUs-title{
+        font-size:1.5rem;
+    }
+    .link{
+        color: var(--clr-light-gray);
+    }
+    .link:not(:last-child){
+        margin-bottom: .1rem;
+    }
+}
+/* Desktop */
+@media screen and (min-width:1280px) {
+    .section{
+        margin: 10rem 25rem ;
+    }
+    .section-center{
+        padding: 0;
+    }
+    .up{
+        padding: 2.5rem;
+    }
+    .title{
+        font-size:1.5rem;
+    }
+    .title-info{
+        font-size:1.3rem;
+    }
+    .info{
+        font-size:1rem;
+        margin-bottom: 0;
+    }
+    .down{
+        display:flex;
+    }
+    .month{
+        width:50%;
+        margin-left: 0;
+        margin-right: 0;
+        padding:2.5rem;
+        border-bottom-left-radius: var(--radius);
+    }
+    .month-title{
+        font-size:1.2rem;
+    }
+    .price strong{
+        font-size:2.5rem;
+    }
+    .month-info{
+        font-size:1.2rem;
+    }
+    .btn{
+        padding: 1rem 5.5rem;
+        box-shadow: 0px 0px 14px 5px rgb(0 0 0 / 30%);
+
+    }
+    .whyUs-title{
+        font-size:1.5rem;
+    }
+    .link{
+        color: var(--clr-light-gray);
+    }
+    .link:not(:last-child){
+        margin-bottom: .1rem;
+    }
+    .whyUs{
+        width:50%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: var(--radius);
+        padding:2.5rem;
+    }
+}
